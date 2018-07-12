@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  api0:
+    image: api0
+    build:
+      dockerfile: Dockerfile
+      context: ./WebApi0
+    ports:
+      - 80:80
+  api1:
+    image: api1
+    build:
+      dockerfile: Dockerfile
+      context: ./WebApi1
+  api2:
+    image: api2
+    build:
+      dockerfile: Dockerfile
+      context: ./WebApi2
